@@ -8,7 +8,7 @@ const MAP_ID = '18aaa6acf1c584f810a090b4'
 export default function Mapa({ currentSound, sounds, onMarkerClick }) {
   const toLatLng = s => ({ lat: s.gps.lat, lng: s.gps.lng })
 
-  const [camera, setCamera] = useState({ center: toLatLng(currentSound), zoom: 15 })
+  const [camera, setCamera] = useState({ center: toLatLng(currentSound), zoom: 18 })
 
   useEffect(() => {
     setCamera(c => ({ ...c, center: toLatLng(currentSound) }))
